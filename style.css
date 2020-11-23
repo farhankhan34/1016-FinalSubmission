@@ -1,0 +1,22 @@
+section { border: 1px solid red; display: flex;}
+.top { margin:0px;}
+.top-left { border: 1px solid blue; flex: 1 0 25%}
+.top-right {  border: 1px solid blue; flex:2}
+.buttons { border: 1px solid gold; display: flex;}
+.btn {flex: 1;
+    border-width: 2px;
+    border-style: solid;
+    border-color:#44E664;
+    padding: 20px 60px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    background-color:#44E664;
+    color:white;
+    transition: background-color 0.5s ease-out;}
+
+.btn:hover {
+    background-color: transparent;
+    color:white;
+    cursor: pointer;
+}
