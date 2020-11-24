@@ -3,10 +3,10 @@
   0% {
     left: 100%;    
   }
-  10% {
+  20% {
     left: 0%;    
   } 
-  30% {
+  40% {
     left: 0%;    
   } 
 
@@ -14,7 +14,7 @@
     left: -100%;    
   } 
 
-  90% {
+  80% {
     left: -100%;    
   } 
 
@@ -44,7 +44,7 @@
   position: relative;
   flex: 0 0 100%;
   width: 100%;    
-  animation: tostart 15s infinite; 
+  animation: tostart 5s infinite; 
 }
 
 
