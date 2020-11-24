@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width">
     <title>repl.it</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <!--<link href="carousel.css" rel="stylesheet" type="text/css" />-->
   </head>
   <body>
+    <nav class="top-nav">
+      <div class="nav-logo">Logo</div>
+      <div class="nav-item"><a href="about-us.html">About Us</a></div>
+      <div class="nav-item">What's New?</div>
+      <div class="nav-item">Postings</div>
+    </nav>
 
     <section class="top">
       <div class="top-left">
@@ -38,11 +45,38 @@
         </div>
       </div>  
 
-      <div class="middle-right">
-        <h2><&nbsp;&nbsp;Our 2020 Strategy&nbsp;&nbsp;></h2>
-        <image class="banner_one" src="">
-        <image class="banner_two" src="">
-      </div>
+      <div class="middle-right">       
+
+
+        <section class="carousel" aria-label="Gallery">
+          <ol class="carousel__viewport">
+            <li id="carousel__slide1"
+                tabindex="0"
+                class="carousel__slide">
+                <h1>Our 2020 - 2030 Strategy</h1>
+
+                <div class="carousel__snapper">
+                  <a href="#carousel__slide2"
+                    class="carousel__prev"><</a>
+                  <a href="#carousel__slide2"
+                    class="carousel__next">></a>
+                </div>
+            </li>
+            <li id="carousel__slide2"
+                tabindex="0"
+                class="carousel__slide">
+                <h1>See Our International Program</h1>
+              <div class="carousel__snapper"> 
+                <a href="#carousel__slide1"
+                  class="carousel__prev"><</a>
+                <a href="#carousel__slide1"
+                  class="carousel__next">></a>
+              </div>
+             
+            </li>   
+          </ol> 
+        </section>
+      </div>  
            
     </section>
     
@@ -57,7 +91,7 @@
         </div>
       </div>
       <div class="bottom-right">
-          <h2>Open Volunteering Opportunities<h2>
+          <h2>Open Volunteering<br/>Opportunities<h2>
           <input type="button"class="btn" value="See all postings">
       </div>
     

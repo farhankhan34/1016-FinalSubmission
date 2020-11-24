@@ -1,3 +1,9 @@
+body {  
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  font-family: 'Lato', sans-serif;
+  max-width: 1024px;
+}
 
 .logo {
   display: block;
@@ -10,25 +16,67 @@
   overflow: hidden;  
   }
 
+
+.top-nav {
+  display: flex;
+  width: 100%;
+  border: 1px solid green;
+  padding: 10px 5px 15px;
+  background-color: lightgreen;
+}
+
+.nav-item {
+  flex: 1;
+  width: auto;
+}
+
+.nav-logo {
+  flex: 0 0 50%;
+  width: auto;
+}
+
+a { 
+  text-decoration: none;
+  color: #000;
+}
+
 section {  display: flex;}
 .top { margin:0px;}
 .top-left {  flex: 1 0 25%}
 .top-right { flex:2}
 
-.middle { margin:0px;}
-.middle-left {   
-  flex: 1 0 25%;
-  background-color: beige;
+.middle { 
+ margin:1em;
+ background-color: beige;
+ padding: 1em;
 }
-.middle-right {  flex:2;}
+
+.middle-left {   
+  flex: 1 0 25%; 
+  text-align: center;
+}
+.middle-right {  
+  flex:2;
+  text-align: center;
+  background-color: white;
+  }
 
 
-.bottom { margin:0px; background-color: #333333c5;}
+.bottom { 
+  margin:1em;   
+  background-color: #eceff0;
+  padding: 1em;
+  }
+
 .bottom-left {   
   flex: 1 0 25%;
   background-color: rgb(255, 255, 255);
 }
-.bottom-right {  flex:2; padding: 10px;}
+.bottom-right {  
+  flex:2; 
+  padding: 10px;
+  text-align: center;
+  }
 
 .buttons { display: flex;}
 
