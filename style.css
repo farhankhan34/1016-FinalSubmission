@@ -2,8 +2,18 @@ body {
   margin: 0 auto;
   padding: 0 1.25rem;
   font-family: 'Lato', sans-serif;
-  max-width: 1024px;
+  background-color: whitesmoke;
+  font-size: 1.2em;
 }
+
+main {
+  margin: 0 auto;
+ /* max-width: 1024px; */
+  background-color: white;
+  text-align: center;
+  box-shadow:#eceff0;
+}
+
 
 .logo {
   display: block;
@@ -40,26 +50,39 @@ a {
   color: #000;
 }
 
-section {  display: flex;}
+section {  
+  display: flex; 
+  height: 50vh;
+  }
+
+
 .top { margin:0px;}
 .top-left {  flex: 1 0 25%}
 .top-right { flex:2}
 
-.middle { 
- margin:1em;
- background-color: beige;
- padding: 1em;
-}
+  .middle { 
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        margin:1em;
+        background-color: beige;
+        padding: 3vh;
+        }
 
-.middle-left {   
-  flex: 1 0 25%; 
-  text-align: center;
-}
-.middle-right {  
-  flex:2;
-  text-align: center;
-  background-color: white;
-  }
+        .middle-left {   
+          display: block;
+          flex: 1 1 0; 
+          text-align: center;
+          border: 1px solid red;
+          min-width: 100%;   
+        }
+        .middle-right {  
+          flex: 1 1 0;
+          text-align: center;
+          background-color: white;              
+          min-width: 100%;   
+          }
 
 
 .bottom { 
@@ -123,3 +146,55 @@ section {  display: flex;}
     cursor: pointer;
 }
 
+
+.whats-new {
+  position: relative;
+  display: block;
+  top: calc(30vh/3);
+}
+
+/*
+ Ref : https://getbootstrap.com/docs/4.5/layout/overview/ 
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) { 
+
+       .middle-left {             
+          border: 1px solid blue;
+          min-width: 51          
+        }
+        .middle-right {            
+          min-width: 500px;     
+          }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px)
+   {  .middle-left {             
+          border: 1px solid cyan;
+          min-width: 700px;          
+        }
+        .middle-right {            
+          min-width: 700px;     
+          }}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {  .middle-left {             
+          border: 1px solid magenta;
+          min-width: 450px;          
+        }
+        .middle-right {            
+          min-width: 450px;     
+          } }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { .middle-left {             
+          border: 1px solid black;
+          min-width: 600px;          
+        }
+        .middle-right {            
+          min-width: 600px;     
+          } }
