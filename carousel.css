@@ -32,37 +32,36 @@
   }  
 }
 
-.middle-right {
-  position: relative;  
+.middle > .right {
+ /* position: relative; */
   overflow: hidden;   
 }
 .carousel {
-  /*
-  position: relative;  
-  overflow: hidden;   
-  */
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:center;
+
   position: relative;
-  flex: 0 0 100%;
-  width: 100%;    
-  animation: tostart 5s infinite; 
+  width: 200%;
+  animation: tostart 5s infinite;
 }
 
 
 
 .carousel_slide_one {
   position: relative;
-  flex: 0 0 100%;
-  width: 100%;    
-  /*
-  animation: tostart 5s infinite; 
-  */
+  flex: 1;
+  width: 100%;
+  /* animation: tostart 5s infinite; */
+
 }
 
 .carousel_slide_two {
   position: relative;
-  flex: 0 0 100%;
-  width: 100%;  
-  /*
-  animation: tonext 5s infinite;   
-  */
+  flex: 1;
+  width: 100%;
+ /* animation: tonext 5s infinite; */
+
 }
