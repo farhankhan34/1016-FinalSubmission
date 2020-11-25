@@ -1,9 +1,29 @@
 body {  
   margin: 0 auto;
   padding: 0 1.25rem;
-  font-family: 'Lato', sans-serif;
-  max-width: 1024px;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: white;
+  font-size: 1.2em;
 }
+
+
+h1 {
+  font-family: 'Rokkitt', sans-serif;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+  margin: 0 auto;
+ /* max-width: 1024px; */
+  background-color: white;
+  text-align: center;
+  box-shadow:#eceff0;
+
+}
+
 
 .logo {
   display: block;
@@ -19,10 +39,12 @@ body {
 
 .top-nav {
   display: flex;
-  width: 100%;
+  width: 99%;
   border: 1px solid green;
-  padding: 10px 5px 15px;
-  background-color: lightgreen;
+  padding: 10px 10px 15px;
+  background-color: rgb(46, 46, 46);
+  color: #ffffff;
+  font-weight: 600;
 }
 
 .nav-item {
@@ -37,46 +59,68 @@ body {
 
 a { 
   text-decoration: none;
-  color: #000;
+  color: #ffffff;
 }
 
-section {  display: flex;}
-.top { margin:0px;}
-.top-left {  flex: 1 0 25%}
-.top-right { flex:2}
-
-.middle { 
- margin:1em;
- background-color: beige;
- padding: 1em;
-}
-
-.middle-left {   
-  flex: 1 0 25%; 
-  text-align: center;
-}
-.middle-right {  
-  flex:2;
-  text-align: center;
-  background-color: white;
+.section {  
+  display: flex; 
+  
   }
 
 
-.bottom { 
-  margin:1em;   
-  background-color: #eceff0;
-  padding: 1em;
-  }
+.top, .middle, .bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin:1em;
+    background-color: #f5f5dc;
+    height: 50vh;
+    padding: 3vh;
 
-.bottom-left {   
-  flex: 1 0 25%;
-  background-color: rgb(255, 255, 255);
 }
-.bottom-right {  
-  flex:2; 
-  padding: 10px;
-  text-align: center;
-  }
+
+.top {
+    background-color: #f5f5f5;
+}
+
+.bottom {
+    background-color: #eceff0;
+}
+
+
+.left {
+          display: block;
+          flex: 1 1 0; 
+          text-align: center;
+          min-width: 80%;
+        }
+.right {
+          flex: 1 1 0;
+          text-align: center;
+          min-width: 80%;
+          }
+
+.about-left {
+          display: block;
+          flex: 1 1 0; 
+          text-align: center;
+          min-width: 80%;
+          background-color: #f5f5f5;
+        }
+.about-right {
+          flex: 1 1 0;
+          text-align: center;
+          min-width: 80%;
+          background-color: #f5f5f5;
+          }
+
+.top > .left { background-color: #f5f5f5;}
+.top > .right { background-color: #f5f5f5;}
+.middle > .left { background-color: #f5f5dc;}
+.middle > .right { background-color: #ffffff;}
+.bottom > .left { background-color: #ffffff;}
+.bottom > .right { background-color: transparent;}
 
 .buttons { display: flex;}
 
@@ -122,3 +166,62 @@ section {  display: flex;}
     color:white;
     cursor: pointer;
 }
+
+
+.whats-new {  
+  display: block;
+  top: calc(30vh/3);
+}
+
+.notice {
+    padding-left: 3em;
+    text-align: left;
+    font-size: 0.7em;
+}
+
+/*
+ Ref : https://getbootstrap.com/docs/4.5/layout/overview/ 
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) { 
+
+       .left {
+        /*  border: 1px solid blue; */
+          min-width: 80%;
+        }
+        .right {
+          min-width: 80%;
+          }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px)
+   {  .left {
+         /* border: 1px solid green; */
+          min-width: 40%;
+        }
+        .right {
+          min-width: 40%;
+          }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .left {
+          min-width: 40%;
+        }
+     .right {
+          min-width: 40%;
+          } }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .left {
+          min-width: 40%;
+        }
+    .right {
+          min-width: 40%;
+          } }
