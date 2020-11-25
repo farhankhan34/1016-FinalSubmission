@@ -179,6 +179,41 @@ a {
     font-size: 0.7em;
 }
 
+
+.footer-main {
+  background-color: rgb(51, 51, 51);
+  box-sizing: border-box;
+  color :rgb(102, 102, 102);
+  display: block;  
+  font-size: 16px;
+  font-weight: 500;
+  min-height: 189px;
+  line-height: 24px;  
+  width: 100%;  
+}
+
+.container {
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.acknowledgementofcountry {
+  color : #ffffff; 
+  text-align: center;
+
+}
+
+.footer-bar-bottom {
+ margin-bottom: 1em;
+}
+.footer-bar-text {
+    line-height: 1.2em;
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.8em;
+}
+
 /*
  Ref : https://getbootstrap.com/docs/4.5/layout/overview/ 
 */
