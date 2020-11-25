@@ -37,7 +37,7 @@ main {
   width: 99%;
   border: 1px solid green;
   padding: 10px 10px 15px;
-  background-color: lightgreen;
+  background-color: rgb(46, 46, 46);
 }
 
 .nav-item {
