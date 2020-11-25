@@ -1,26 +1,46 @@
-
+/*
 @keyframes tostart {
   0% {
-    left: 100%;    
+    left: 0%;    
   }
-  20% {
+  25% {
     left: 0%;    
   } 
-  40% {
-    left: 0%;    
-  } 
-
-  60% {
+  50% {
     left: -100%;    
   } 
 
-  80% {
+  75% {
     left: -100%;    
   } 
 
   100% {
-    left: -200%;    
-  }  
+    left:  0%;    
+  } 
+ 
+}
+
+*/
+
+@keyframes tostart {
+  0% {
+    left: 0%;    
+  }
+  40% {
+    left: 0%;    
+  } 
+  50% {
+    left: -100%;    
+  } 
+
+  90% {
+    left: -100%;    
+  } 
+
+  100% {
+    left:  0%;    
+  } 
+ 
 }
 
 @keyframes tonext {
@@ -45,7 +65,7 @@
 
   position: relative;
   width: 200%;
-  animation: tostart 5s infinite;
+  animation: tostart 6s infinite;
 }
 
 
@@ -54,14 +74,28 @@
   position: relative;
   flex: 1;
   width: 100%;
-  /* animation: tostart 5s infinite; */
-
+  height: 50vh;  
+  background-image: url('images/bbq.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center; 
+  
 }
 
-.carousel_slide_two {
+.carousel_slide_two {  
   position: relative;
   flex: 1;
   width: 100%;
- /* animation: tonext 5s infinite; */
+  height: 50vh;
+  background-image: url('images/mabrook.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center; 
+}
 
+.carousel h1 {
+  color: #00ff00;
+  /* background-color: #ffffff; */
+  line-height: 1.7em;
+  font-size: 3em;
 }
