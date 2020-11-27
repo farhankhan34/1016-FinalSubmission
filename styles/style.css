@@ -1,6 +1,5 @@
 body {  
   margin: 0 auto;
-  padding: 0 1.25rem;
   font-family: 'Nunito Sans', sans-serif;
   background-color: white;
   font-size: 0.7em;
@@ -25,38 +24,76 @@ main {
 }
 
 
+
 .logo {
   display: block;
   overflow: hidden;
   max-width: 100px;
-  max-height: 60px; 
+  max-height: 30px;
   }
 
+/*
 .logo-image {   
   overflow: hidden;  
   }
-
+*/
 
 .top-nav {
-  display: flex;
-  width: 99%;
+  grid-area: header;
+  display: flex; 
   border: 1px solid green;
-  padding: 10px 10px 15px;
+  margin: 0;
+  padding: 10px 15px;
   background-color: rgb(46, 46, 46);
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 600;  
+  width:100%;
 }
 
-.wide-nav {  
-  display: none;    
-  min-width: 50vw;
+
+
+.wide-nav {
+    display: none;
+    grid-template-columns: 10% 40% 10% 10% 10% 10% 10%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo .  about-us whats-new postings apply-now .";
+    width: 100%;
+    padding: 2px;
+}
+.wide-nav > .menu-item-link {
+    padding: 5px;
+    background-color: transparent;
+    width: 10em;
+    line-height: 1.7em;
+    text-align: center;
+}
+.wide-nav > .menu-item-link:hover {
+    background-color: #000000;
 }
 
-.mobile-nav {
-  display: block;   
-  top: 0em;      
+.wide-nav > .item-about-us {  grid-area: about-us;}
+.wide-nav > .item-whats-new { grid-area: whats-new;}
+.wide-nav > .item-postings {  grid-area: postings;}
+.wide-nav > .item-apply-now { grid-area: apply-now;}
+
+
+.social-menu {
+    display: grid;
+    grid-template-columns: 30% 10% 10% 10% 10% 30%;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". facebook linkedin twitter youtube .";
+    width: 100%;
+    padding: 2px;
 }
 
+.facebook {  grid-area: facebook;}
+.linkedin {  grid-area: linkedin;}
+.twitter {  grid-area: twitter;}
+.youtube {  grid-area: youtube;}
+
+.nav-logo {
+    grid-area: logo;
+}
 
 .top-nav > .active { 
   color:khaki;
@@ -64,20 +101,12 @@ main {
   font-weight: bolder;
   }
 
-.nav-item {
-  flex: 1;
-  width: auto;
-}
 
-.nav-logo {
-  flex: 0 0 30%;
-  width: auto;
-}
+
 
 .sticky {
   position: fixed;
-  top: 0;
-  width: 100%;
+  top: 0;    
   z-index:999;
 }
 
@@ -329,6 +358,27 @@ input
   padding-top:20vh;
 }
 
+
+.page-body {
+  grid-area: main;
+}
+
+.footer-main {
+  grid-area: footer;
+}
+
+.page-container {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+}
+
+
+
 /*
  Ref : https://getbootstrap.com/docs/4.5/layout/overview/ 
 */
@@ -344,7 +394,7 @@ input
           }       
 
      .wide-nav {  display: none;}
-     .mobile-nav {  display: flex; }     
+     .mobile-nav {  display: grid; }
 }
 
 /* Medium devices (Galaxy Moto, Pixel) */
@@ -354,8 +404,8 @@ input
      .right { min-width: 40%; }
      .middle {  min-height: 58vh;}   
      .wide-nav {  display: none;}
-     .mobile-nav {  display: flex; }       
-   }
+     .mobile-nav {  display: grid; }
+  }
 
 
 /* Medium devices (tablets, 768px and up) */
@@ -365,17 +415,17 @@ input
      .right { min-width: 40%; }
      .middle {  min-height: 50vh;}  
      .wide-nav {  display: none;}
-     .mobile-nav {  display: flex; }            
-     
-   }
+     .mobile-nav {  display: grid; }
+
+  }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
      .left { min-width: 40%; }
      .right { min-width: 40%; }
      .middle {  min-height: 50vh;}  
-     .wide-nav {  display: flex;}
-     .mobile-nav {  display: none; }   
+     .wide-nav {  display: grid;}
+     .mobile-nav {  display: none; }
    }
 
 
@@ -384,7 +434,7 @@ input
      .left { min-width: 40%; }
      .right { min-width: 40%; }
      .middle {  min-height: 50vh;} 
-     .wide-nav {  display: flex;} 
-     .mobile-nav {  display: none; }   
-     
-     }
+     .wide-nav {  display: grid;}
+     .mobile-nav {  display: none; }
+
+  }

@@ -1,58 +1,68 @@
 
-.right-align {
-  position: absolute;
-  right: 10em;  
+.mobile-nav {
+  display: grid;
+  width:100%;
+  justify-content:space-around;
+  grid-template-columns: 100px 1fr 150px;
+  grid-template-rows: auto;
+  grid-template-areas:
+            "logo  . dropdown-button";
 }
 
 
-.dropdown {
-  float: right;
-  overflow: hidden;
-  right: 10em; 
-}
 
-.dropdown .dropbtn {
-  font-size: 16px;  
+
+.nav-drop-btn {
   border: none;
   outline: none;
-  color: white;
-  padding: 1px;
   background-color: inherit;
-  font-family: inherit;
-  margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: black;
+.nav-dropdown-menu {
+  grid-area: dropdown-button;
 }
 
-.dropdown-content {
+.dropdown-menu-items {
+  grid-area: dropdown-menu-items;
+}
+
+.dropdown-menu-items {
   display: none;
   position: absolute;
-  right: 0em;
+  right: 5em;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 27em;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-.dropdown-content .mob-nav-item {
+.dropdown-menu-items .mobile-nav-item {
   float: none;
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
   text-align: right;
+  line-height: 1.7em;
+  font-size: 1.7em;
 }
 
-.dropdown-content .mob-nav-item a {
-  color: #000000;
+.nav-drop-btn {
+  cursor: pointer;
 }
-
-.dropdown-content .mob-nav-item:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
+.nav-dropdown-menu:hover .dropdown-menu-items {
   display: block;
+}
+
+
+
+.dropdown-menu-items .mobile-nav-item .mobile-link {
+  color: #000000;
+  min-width: 27em;
+  background-color: red;
+}
+
+
+.dropdown-menu-items .mobile-nav-item:hover {
+  background-color: #ddd;
 }

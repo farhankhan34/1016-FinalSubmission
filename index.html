@@ -12,6 +12,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Rokkitt&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 	
   <link href="styles\carousel.css" rel="stylesheet" type="text/css" />
   <link href="styles\mobile-menu.css" rel="stylesheet" type="text/css" />
@@ -19,38 +22,38 @@
 </head>
 
 
-<body>
+<body class="page-container">
 	<nav class="top-nav sticky">
-		<div class="nav-logo"><img class="logo" src="images/ewb_australia.png"/></div>
-    <div class="wide-nav">
-      <div class="nav-item"><a href="about_us.html">About Us</a></div>
-      <div class="nav-item"><a href="apply_now.html">Apply Now</a></div>
-      <div class="nav-item">What's New?</div>
-      <div class="nav-item">Postings</div>   
-    </div>
-    <div class="mobile-nav right-align"> 
-          <div class="dropdown">
-            <button class="dropbtn">
-               <img src="images/mobile-menu.png"/>
-            </button>
-            <div class="dropdown-content">
-              <div class="mob-nav-item"><a href="about_us.html">About Us</a></div>
-              <div class="mob-nav-item"><a href="apply_now.html">Apply Now</a></div>
-              <div class="mob-nav-item">What's New?</div>
-              <div class="mob-nav-item">Postings</div> 
+        <div class="wide-nav">
+            <div class="nav-logo"><img class="logo" src="images/logo.png"/></div>
+            <a class="menu-item-link item-about-us"  href="about_us.html"><div class="nav-item">About Us</div></a>
+            <a class="menu-item-link item-apply-now" href="apply_now.html"><div class="nav-item">Apply Now</div></a>
+            <a class="menu-item-link item-whats-new" href="#"><div class="nav-item"> What's New?</div></a>
+            <a class="menu-item-link item-postings"  href="#"><div class="nav-item">Postings</div></a>
+        </div>
+
+        <div class="mobile-nav">
+            <div class="nav-logo"><img class="logo" src="images/logo.png"/></div>
+            <div class="nav-dropdown-menu">
+                <button class="nav-drop-btn">
+                    <img src="images/mobile-bars.png"/>
+                </button>
+                <div class="dropdown-menu-items">
+                    <a class="mobile-link" href="about_us.html"><div class="mobile-nav-item">About Us</div></a>
+                    <a class="mobile-link" href="apply_now.html"><div class="mobile-nav-item">Apply Now</div></a>
+                    <a class="mobile-link" href="#"><div class="mobile-nav-item"> What's New?</div></a>
+                    <a class="mobile-link" href="#"><div class="mobile-nav-item">Postings</div></a>
+                </div>
             </div>
-          </div>      
-    </div>  
-  </div>
+        </div>
 
-	</nav>
-
-  
+    </nav>
 
 
 
 
-	<main>
+
+	<main class="page-body">
 		<section class="top">
 			<div class="v-center">
 				<div class="motto">
@@ -106,7 +109,7 @@
     
     </section>
 
-      
+
 
       
 </main>
@@ -118,6 +121,32 @@
             <p class="footer-bar-text">
               <span class="acknowledgementofcountry">EWB respectfully acknowledges the Traditional Owners of the Country on which we work.</span>
             </p>
+
+
+
+
+            <div class="social-menu">
+                    <div class="facebook">
+                        <a title="EWB Australia on Facebook" target="_blank" rel="noopener noreferrer" href="http://www.facebook.com/ewbaustralia">
+                            <i class="fab fa-facebook-square fa-2x"></i>
+                         </a>
+                    </div>
+                    <div class="linkedin">
+                        <a title="EWB Australia on LlnkedIn" target="_blank" rel="noopener noreferrer" href="http://www.linkedin.com/company/engineers-without-borders-australia">
+                            <i class="fab fa-linkedin  fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="twitter">
+                        <a title="EWB Australia on Twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/#!/EWB_Australia" data-et-has-event-already="true">
+                            <i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="youtube">
+                        <a title="EWB Australia on YouTube" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/EWBAustralia">
+                            <i class="fab fa-youtube-square fa-2x" aria-hidden="true"></i></a>
+                    </div>
+
+            </div>
+
+
             <div class="footer-bar-bottom">
               <p class="footer-bar-text">
                 <span>Engineers Without Borders Australia, 552 Victoria St, North Melbourne VIC 3051<br>Phone: +61 3 9108 7215, Email: info@ewb.org.au, ABN 13 103 896 920 <br>© Engineers Without Borders Australia 2018</span></p>
